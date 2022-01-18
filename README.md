@@ -1,3 +1,7 @@
+<h1 align="center">Versículo</h1>
+<p align="center">Uma página que exibe um versículo dependendo do momento do dia... 🌚📖🌞</p>
+
+<br>
 <div align="center">
   <img src="https://img.shields.io/badge/License-MIT-000?style=social&logo=json&logoColor=469BD2">
   &nbsp;
@@ -8,11 +12,8 @@
   <img src="https://img.shields.io/badge/CSS-000?style=social&logo=css3&logoColor=469BD2">
   &nbsp;
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
-  
-  <h1 align="center">Versículo</h1>
-  <p align="center">Uma página que exibe um versículo dependendo do momento do dia... 🌚📖🌞</p>
-  <br><br>
 </div>
+<br>
 
 ## 💻 Situação do projeto:
 
@@ -26,7 +27,7 @@
 
 ## 📝 Features:
 
-- [x] Mostrar um versículo dependendo do momento do dia.
+- [x] Mostrar um versículo dependendo do momento do dia
 
 ## ⚙️ Pré-requisitos:
 
