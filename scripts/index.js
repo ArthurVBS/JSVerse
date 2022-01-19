@@ -8,6 +8,12 @@ function load()
     var date = new Date()
     var hours = date.getHours()
 
+    showHours(time, hours)
+    showVerse(image, verse, text, hours)
+}
+
+function showVerse(image, verse, text, hours)
+{
     if (hours >= 6 && hours < 12)
     {
         document.body.style.backgroundColor = '#FEEAB8'
@@ -29,7 +35,10 @@ function load()
         verse.innerHTML = `Salmos 119:105`
         text.innerHTML = `A tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho.`
     }
+}
 
+function showHours(time, hours)
+{
     if (hours >= 2)
     {
         time.innerHTML = `Agora são ${hours} horas`
