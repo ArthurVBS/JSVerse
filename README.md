@@ -1,7 +1,5 @@
-<h1 align="center">Versículo</h1>
-<p align="center">Uma página que exibe um versículo dependendo do momento do dia... 🌚📖🌞</p>
+<h1 align="center">Verse</h1>
 
-<br>
 <div align="center">
   <img src="https://img.shields.io/badge/License-MIT-000?style=social&logo=json&logoColor=469BD2">
   &nbsp;
@@ -13,13 +11,22 @@
   &nbsp;
   <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
 </div>
-<br>
 
-## 💻 Situação do projeto:
+## 🗣️ ReadMe:
 
-- Projeto finalizado ✔️
+- English
+- [Portuguese](https://github.com/ArthurVBS/JSVerse/blob/main/README-pt.md)
 
-## 🛠 Tecnologias:
+## ✨ About the project:
+
+- 📖 A web page that displays a verse depending on the time of day.
+- 🤖 My first public project using 'Javascript / HTML / CSS'.
+
+## 💻 Project status:
+
+- Finished project ✔️
+
+## 🛠 Technologies:
 
 - HTML
 - CSS
@@ -27,22 +34,22 @@
 
 ## 📝 Features:
 
-- [x] Mostrar um versículo dependendo do momento do dia
+- [x] Show a verse depending on the time of day.
 
-## ⚙️ Pré-requisitos:
+## ⚙️ Prerequisites:
 
-- Acesso à internet - Navegador
+- Internet access - Browser
 
-## 🚀 Como rodar a aplicação?
+## 🚀 How to run the application?
 
-- Acesse o [site da aplicação](https://arthurvbs.github.io/JSVerse/)
+- Go to the [application website](https://arthurvbs.github.io/JSVerse/)
 
-## 📝 Licença
+## 📝 License
 
-- Este projeto está sobe a licença [MIT](https://github.com/ArthurVBS/JSVerse/blob/main/LICENSE)
+- This project is licensed under the [MIT](https://github.com/ArthurVBS/JSVerse/blob/main/LICENSE)
 
-<h2 align="center">👨🏽‍💻 Autor</h2>
+<h2 align="center">👨🏽‍💻 Author</h2>
 <div align="center">
-  <img width="100px;" src="https://avatars.githubusercontent.com/u/84406367?v=4" alt="Foto do autor"/>
-  <br><span>Feito por <a href="https://github.com/ArthurVBS" target="_blank" rel="external">Arthur V.B.S</a>✌🏽</span>
+  <img width="100px;" src="https://avatars.githubusercontent.com/u/84406367?v=4" alt="Author's photo"/>
+  <br><span>Made by <a href="https://github.com/ArthurVBS" target="_blank" rel="external">Arthur V.B.S</a>✌🏽</span>
 </div>
