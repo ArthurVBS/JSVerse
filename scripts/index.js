@@ -1,50 +1,56 @@
-function load()
-{
-    var time = window.document.querySelector('.time')
-    var image = window.document.querySelector('.image')
-    var verse = window.document.querySelector('.verse')
-    var text = window.document.querySelector('.text')
-    
-    var date = new Date()
-    var hours = date.getHours()
-
-    showHours(time, hours)
-    showVerse(image, verse, text, hours)
+const verse = {
+  morning: {
+    imageSRC: 'images/dawn.png',
+    verse: 'Psalm 143:8',
+    text: 'Let the morning bring me word of your unfailing love, for I have put my trust in you. Show me the way I should go, for to you I entrust my life.',
+    color: '#FEEAB8'
+  },
+  afternoon: {
+    imageSRC: 'images/cross.png',
+    verse: 'Philippians 2:8',
+    text: 'And being found in appearance as a man, he humbled himself by becoming obedient to death— even death on a cross!',
+    color: '#B9846F'
+  },
+  night: {
+    imageSRC: 'images/lamp.png',
+    verse: 'Psalm 119:105',
+    text: 'Your word is a lamp for my feet, a light on my path.',
+    color: '#2F3549'
+  }
 }
 
-function showVerse(image, verse, text, hours)
-{
-    if (hours >= 6 && hours < 12)
-    {
-        document.body.style.backgroundColor = '#FEEAB8'
-        image.src = "images/dawn.png"
-        verse.innerHTML = `Salmo 143:8`
-        text.innerHTML = `Faze-me ouvir do teu amor leal pela manhã, pois em ti confio. Mostra-me o caminho que devo seguir, pois a ti elevo a minha alma`
-    }
-    else if (hours >= 12 && hours < 18)
-    {
-        document.body.style.backgroundColor = '#B9846F'
-        image.src = "images/cross.png"
-        verse.innerHTML = `Filipenses 2:8`
-        text.innerHTML = `E, sendo encontrado em forma humana, humilhou-se a si mesmo e foi obediente até à morte, e morte de cruz!`
-    }
-    else
-    {
-        document.body.style.backgroundColor = '#2F3549'
-        image.src = "images/lamp.png"
-        verse.innerHTML = `Salmos 119:105`
-        text.innerHTML = `A tua palavra é lâmpada que ilumina os meus passos e luz que clareia o meu caminho.`
-    }
+const load = () => {
+  const date = new Date()
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+
+  displayVerse(hours, minutes)
 }
 
-function showHours(time, hours)
-{
-    if (hours >= 2)
-    {
-        time.innerHTML = `Agora são ${hours} horas`
-    }
-    else 
-    {
-        time.innerHTML = `Agora é ${hours} hora`
-    }
+const displayVerse = (hours, minutes) => {
+  const $time = window.document.querySelector('.time')
+  const $image = window.document.querySelector('.image')
+  const $verse = window.document.querySelector('.verse')
+  const $text = window.document.querySelector('.text')
+
+  $time.innerHTML = `It's ${hours}:${minutes}`
+
+  if (hours >= 6 && hours < 12) {
+    document.body.style.backgroundColor = verse.morning.color
+    $image.src = verse.morning.imageSRC
+    $verse.innerHTML = verse.morning.verse
+    $text.innerHTML = verse.morning.text
+  }
+  else if (hours >= 12 && hours < 18) {
+    document.body.style.backgroundColor = verse.afternoon.color
+    $image.src = verse.afternoon.imageSRC
+    $verse.innerHTML = verse.afternoon.verse
+    $text.innerHTML = verse.afternoon.text
+  }
+  else {
+    document.body.style.backgroundColor = verse.night.color
+    $image.src = verse.night.imageSRC
+    $verse.innerHTML = verse.night.verse
+    $text.innerHTML = verse.night.text
+  }
 }

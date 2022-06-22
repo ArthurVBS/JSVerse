@@ -1,74 +1,73 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*
-{
-    padding: 0;
-    margin: 0;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-html
-{
-    height: 100%;
-    overflow-y: hidden;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 16px;
 }
 
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 12px;
+main {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-height: 360px;
+  max-width: none;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 8px 8px 12px #00000077;
 }
 
-main
-{
-    background-color: aliceblue;
-    display: flex;
+.time {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 8px;
+}
+
+.image {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 8px #00000077;
+}
+
+.verse {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 8px;
+}
+
+.text {
+  font-size: 1em;
+  text-indent: 1em;
+  text-align: justify;
+  padding: 8px;
+}
+
+
+@media screen and (min-height: 528px) {
+  main {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 360px;
-    border-radius: 25px;
-    padding: 12px;
-    box-shadow: 8px 8px 12px #00000077;
-}
-
-main > .time
-{
-    font-size: 1.3em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 12px;
-}
-
-main > .image
-{
-    margin: 12px;
-    width: 240px;
-    border-radius: 25px;
-    box-shadow: 4px 4px 8px #00000077;
-}
-
-main > .verse
-{
-    font-size: 1.1em;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 12px;
-}
-
-main > .text
-{
-    font-size: 1em;
-    text-indent: 16px;
-    text-align: justify;
-    padding: 12px;
+    max-height: none;
+  }
 }
